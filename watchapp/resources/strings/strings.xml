@@ -1,0 +1,14 @@
+<strings>
+    <string id="AppName">watchapp</string>
+
+    <string id="prompt">Click the menu button</string>
+
+    <string id="menu_label_1">Item 1</string>
+    <string id="menu_label_2">Item 2</string>
+    <string id="good">QUALITY_GOOD</string>
+    <string id="usable">QUALITY_USABLE</string>
+    <string id="poor">QUALITY_POOR</string>
+    <string id="lastKnown">QUALITY_LAST_KNOWN</string>
+    <string id="notAvailable">QUALITY_NOT_AVAILABLE</string>
+
+</strings>

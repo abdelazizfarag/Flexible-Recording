@@ -1,0 +1,714 @@
+[ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 3; ]
+import Toybox.Position;
+[ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 4; ]
+import Toybox.Application;
+[ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 5; ]
+using Toybox.System;
+[ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 6; ]
+using Toybox.Time.Gregorian;
+[ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 7; ]
+using Toybox.Communications;
+[ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 8; ]
+using Toybox.Timer;
+[ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 9; ]
+using Toybox.Ant;
+[ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 11; ]
+class watchappView extends WatchUi.View{
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 11; ]
+    <init> {
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 12 8 ]
+        %tmp.1 = newd 0;
+        putv self :options %tmp.1;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 31 8 ]
+        %tmp.4 = getm $.Toybox.Timer;
+        %tmp.5 = getv function ? %tmp.4 :Timer;
+        %tmp.2 = newc %tmp.5 ();
+        putv self :myTimer %tmp.2;
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 11; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 12; @position = 8; ]
+    var options;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 15; @position = 15; ]
+    protected
+    var posquality = null;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 16; @position = 15; ]
+    protected
+    var progressDots = "";
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 17; @position = 15; ]
+    protected
+    var progressTimer = null;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 18; @position = 15; ]
+    protected
+    var posInfo = null;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 19; @position = 15; ]
+    protected
+    var wifi = null;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 20; @position = 15; ]
+    protected
+    var errorCode;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 21; @position = 15; ]
+    protected
+    var wifiStatus;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 22; @position = 15; ]
+    protected
+    var location;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 23; @position = 15; ]
+    protected
+    var locTop;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 24; @position = 15; ]
+    protected
+    var locBot;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 25; @position = 15; ]
+    protected
+    var time;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 26; @position = 15; ]
+    protected
+    var timestamp;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 27; @position = 15; ]
+    protected
+    var gpsStatus = false;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 28; @position = 8; ]
+    var signalStrength;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 29; @position = 8; ]
+    var channelAssign;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 31; @position = 8; ]
+    var myTimer;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 33; ]
+    function initialize() as Void {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_33_26_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 34 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_33_26_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 39; ]
+    function checkConnection() {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_39_30_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 40 8 ]
+        %tmp.1 = getm $.Toybox.Communications;
+        %tmp.2 = getv function %tmp.1 :checkWifiConnection;
+        %tmp.3 = self;
+        %tmp.4 = getv function %tmp.3 :method;
+        %tmp.6 = const :onWifiConnectionStatus;
+        %tmp.7 = invoke %tmp.3 %tmp.4(%tmp.6);
+        invoke %tmp.1 %tmp.2(%tmp.7);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 41 8 ]
+        %tmp.8 = getm $.Toybox.WatchUi;
+        %tmp.9 = getv function %tmp.8 :requestUpdate;
+        invoke %tmp.8 %tmp.9();
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_39_30_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 45; ]
+    function onWifiConnectionStatus(wifi) {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_45_42_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 46 8 ]
+        %tmp.2 = lgetv %wifi;
+        %tmp.4 = const :wifiAvailable;
+        %tmp.5 = agetv %tmp.2 %tmp.4;
+        putv self :wifiStatus %tmp.5;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 47 8 ]
+        %tmp.7 = lgetv %wifi;
+        %tmp.9 = const :errorCode;
+        %tmp.10 = agetv %tmp.7 %tmp.9;
+        putv self :errorCode %tmp.10;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 48 8 ]
+        %tmp.12 = getv ? :wifiStatus;
+        ret %tmp.12;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_45_42_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 52; ]
+    function onLayout(dc as Dc) as Void {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_52_40_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 53 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :MainLayout;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_52_40_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 57; ]
+    function startPositioning() {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_57_32_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 58 8 ]
+        try @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_beginTry @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_endTry @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_catch @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_finally;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_beginTry:
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_12_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 60 12 ]
+        %tmp.1 = getv self :options;
+        %tmp.2 = newa 2;
+        %tmp.3 = getm $.Toybox.Position;
+        %tmp.4 = getv %tmp.3 :CONSTELLATION_GPS;
+        %tmp.5 = dup %tmp.2;
+        %tmp.6 = aputv %tmp.5 0 %tmp.4;
+        %tmp.7 = getm $.Toybox.Position;
+        %tmp.8 = getv %tmp.7 :CONSTELLATION_GLONASS;
+        %tmp.9 = dup %tmp.6;
+        %tmp.10 = aputv %tmp.9 1 %tmp.8;
+        %tmp.12 = const :constellations;
+        aputv %tmp.1 %tmp.12 %tmp.10;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 61 12 ]
+        %tmp.13 = getv self :options;
+        %tmp.14 = getm $.Toybox.Position;
+        %tmp.15 = getv %tmp.14 :CONFIGURATION_GPS;
+        %tmp.17 = const :configuration;
+        aputv %tmp.13 %tmp.17 %tmp.15;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 62 12 ]
+        %tmp.18 = getv self :options;
+        %tmp.19 = getm $.Toybox.Position;
+        %tmp.20 = getv %tmp.19 :LOCATION_CONTINUOUS;
+        %tmp.22 = const :acquisitionType;
+        aputv %tmp.18 %tmp.22 %tmp.20;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_12_stop:
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_endTry:
+        jsr @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_finally;
+        goto @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_end;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_catch:
+        %tmp.23 = exception;
+        push %tmp.23;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 63 10 ]
+        [ "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_catch" "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_63_10_end" ]
+        %ex.1 = local;
+        %tmp.24 = dup %tmp.23;
+        lputv %ex.1 %tmp.24;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_63_21_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 64 12 ]
+        %tmp.25 = getm $.Toybox.System;
+        %tmp.26 = getv function %tmp.25 :println;
+        %tmp.27 = false;
+        invoke %tmp.25 %tmp.26(%tmp.27);
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_63_21_stop:
+        jsr @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_finally;
+        pop;
+        goto @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_end;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_63_10_end:
+        try @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_catch @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_63_10_end @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_63_10_end @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_finally;
+        jsr @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_finally;
+        throw %tmp.23;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_finally:
+        jsrret;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_58_8_end:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 66 8 ]
+        %tmp.28 = getm $.Toybox.Position;
+        %tmp.29 = getv function %tmp.28 :enableLocationEvents;
+        %tmp.31 = getv ? :options;
+        %tmp.32 = self;
+        %tmp.33 = getv function %tmp.32 :method;
+        %tmp.35 = const :onPosition;
+        %tmp.36 = invoke %tmp.32 %tmp.33(%tmp.35);
+        invoke %tmp.28 %tmp.29(%tmp.31, %tmp.36);
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_57_32_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 70; ]
+    function onPosition(info) {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_70_30_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 71 8 ]
+        %tmp.2 = lgetv %info;
+        putv self :posInfo %tmp.2;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_70_30_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 77; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 81; ]
+    function initializeGPS() {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_81_29_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 82 8 ]
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_82_8_if_stmt:
+        %tmp.2 = getv ? :gpsStatus;
+        %tmp.3 = false;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_82_8_if_end;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_82_8_if_true:
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_82_31_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 83 12 ]
+        %tmp.5 = self;
+        %tmp.6 = getv function %tmp.5 :startPositioning;
+        invoke %tmp.5 %tmp.6();
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 84 12 ]
+        %tmp.7 = true;
+        putv self :gpsStatus %tmp.7;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 85 12 ]
+        %tmp.8 = getm $.Toybox.System;
+        %tmp.9 = getv function %tmp.8 :println;
+        %tmp.11 = getv ? :gpsStatus;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_82_31_stop:
+        goto @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_82_8_if_end;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_82_8_if_end:
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_81_29_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 89; ]
+    function checkGPSQuality() {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_89_31_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 90 8 ]
+        %tmp.1 = getm $.Toybox.Position;
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        putv self :posInfo %tmp.3;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 91 8 ]
+        %tmp.5 = getv ? :posInfo;
+        %tmp.6 = getv %tmp.5 :accuracy;
+        putv self :signalStrength %tmp.6;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 93 8 ]
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_8_if_stmt:
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_12_begin:
+        %tmp.8 = getv ? :posInfo;
+        %tmp.9 = getv %tmp.8 :accuracy;
+        %tmp.10 = getm $.Toybox.Position;
+        %tmp.11 = getv %tmp.10 :QUALITY_GOOD;
+        %tmp.12 = eq %tmp.9 %tmp.11;
+        %tmp.13 = dup %tmp.12;
+        bt %tmp.13 @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_57_end;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_57_false:
+        %tmp.15 = getv ? :posInfo;
+        %tmp.16 = getv %tmp.15 :accuracy;
+        %tmp.17 = getm $.Toybox.Position;
+        %tmp.18 = getv %tmp.17 :QUALITY_USABLE;
+        %tmp.19 = eq %tmp.16 %tmp.18;
+        %tmp.20 = or %tmp.12 %tmp.19;
+        push %tmp.20;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_57_end:
+        %tmp.21 = phi [%tmp.13 @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_12_begin] [%tmp.20 @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_57_false] [%tmp.21 @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_57_end];
+        bf %tmp.21 @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_8_if_end;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_8_if_true:
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_101_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 94 12 ]
+        %tmp.22 = getm $.Toybox.System;
+        %tmp.23 = getv function %tmp.22 :println;
+        %tmp.24 = "User left the building";
+        invoke %tmp.22 %tmp.23(%tmp.24);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 96 12 ]
+        %tmp.26 = getv ? :posInfo;
+        %tmp.27 = getv %tmp.26 :position;
+        %tmp.28 = getv function %tmp.27 :toDegrees;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        putv self :location %tmp.29;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 97 12 ]
+        %tmp.31 = getv ? :location;
+        %tmp.32 = 0;
+        %tmp.33 = agetv %tmp.31 %tmp.32;
+        putv self :locTop %tmp.33;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 98 12 ]
+        %tmp.35 = getv ? :location;
+        %tmp.36 = 1;
+        %tmp.37 = agetv %tmp.35 %tmp.36;
+        putv self :locBot %tmp.37;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 101 12 ]
+        %tmp.39 = getv ? :posInfo;
+        %tmp.40 = getv %tmp.39 :when;
+        putv self :time %tmp.40;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 102 12 ]
+        %tmp.41 = getm $.Toybox.Time.Gregorian;
+        %tmp.42 = getv function %tmp.41 :info;
+        %tmp.44 = getv ? :time;
+        %tmp.46 = getv ? :Time;
+        %tmp.47 = getv %tmp.46 :FORMAT_SHORT;
+        %tmp.48 = invoke %tmp.41 %tmp.42(%tmp.44, %tmp.47);
+        putv self :timestamp %tmp.48;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 103 12 ]
+        [ "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_101_start" "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_101_stop" ]
+        %formattedTime.1 = local;
+        %tmp.50 = getv ? :Lang;
+        %tmp.51 = getv function %tmp.50 :format;
+        %tmp.52 = "$1$:$2$:$3$";
+        %tmp.53 = newa 3;
+        %tmp.55 = getv ? :timestamp;
+        %tmp.56 = getv %tmp.55 :hour;
+        %tmp.57 = getv function %tmp.56 :format;
+        %tmp.58 = "%02u";
+        %tmp.59 = invoke %tmp.56 %tmp.57(%tmp.58);
+        %tmp.60 = dup %tmp.53;
+        %tmp.61 = aputv %tmp.60 0 %tmp.59;
+        %tmp.63 = getv ? :timestamp;
+        %tmp.64 = getv %tmp.63 :min;
+        %tmp.65 = getv function %tmp.64 :format;
+        %tmp.66 = "%02u";
+        %tmp.67 = invoke %tmp.64 %tmp.65(%tmp.66);
+        %tmp.68 = dup %tmp.61;
+        %tmp.69 = aputv %tmp.68 1 %tmp.67;
+        %tmp.71 = getv ? :timestamp;
+        %tmp.72 = getv %tmp.71 :sec;
+        %tmp.73 = getv function %tmp.72 :format;
+        %tmp.74 = "%02u";
+        %tmp.75 = invoke %tmp.72 %tmp.73(%tmp.74);
+        %tmp.76 = dup %tmp.69;
+        %tmp.77 = aputv %tmp.76 2 %tmp.75;
+        %tmp.78 = invoke %tmp.50 %tmp.51(%tmp.52, %tmp.77);
+        lputv %formattedTime.1 %tmp.78;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_101_stop:
+        goto @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_8_if_end;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_93_8_if_end:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 109 8 ]
+        %tmp.79 = getm $.Toybox.WatchUi;
+        %tmp.80 = getv function %tmp.79 :requestUpdate;
+        invoke %tmp.79 %tmp.80();
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_89_31_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 113; ]
+    function trigger(wifiStatus) {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_113_33_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 114 8 ]
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_114_8_if_stmt:
+        %tmp.2 = lgetv %wifiStatus;
+        %tmp.3 = false;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_114_8_if_false;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_114_8_if_true:
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_114_32_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 115 12 ]
+        %tmp.5 = getm $.Toybox.System;
+        %tmp.6 = getv function %tmp.5 :println;
+        %tmp.7 = "Wifi is out of range";
+        invoke %tmp.5 %tmp.6(%tmp.7);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 116 12 ]
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :initializeGPS;
+        invoke %tmp.8 %tmp.9();
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 117 12 ]
+        %tmp.10 = self;
+        %tmp.11 = getv function %tmp.10 :checkGPSQuality;
+        invoke %tmp.10 %tmp.11();
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_114_32_stop:
+        goto @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_114_8_if_end;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_114_8_if_false:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 119 14 ]
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_119_14_if_stmt:
+        %tmp.13 = lgetv %wifiStatus;
+        %tmp.14 = true;
+        %tmp.15 = eq %tmp.13 %tmp.14;
+        bf %tmp.15 @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_119_14_if_end;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_119_14_if_true:
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_119_37_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 120 12 ]
+        %tmp.16 = getm $.Toybox.System;
+        %tmp.17 = getv function %tmp.16 :println;
+        %tmp.18 = "Wifi available";
+        invoke %tmp.16 %tmp.17(%tmp.18);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 121 12 ]
+        %tmp.19 = false;
+        putv self :gpsStatus %tmp.19;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_119_37_stop:
+        goto @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_119_14_if_end;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_119_14_if_end:
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_114_8_if_end:
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_113_33_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 129; ]
+    function onUpdate(dc as Dc) as Void {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_129_40_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 131 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :checkConnection;
+        invoke %tmp.1 %tmp.2();
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 132 8 ]
+        %tmp.3 = self;
+        %tmp.4 = getv function %tmp.3 :trigger;
+        %tmp.6 = getv ? :wifiStatus;
+        invoke %tmp.3 %tmp.4(%tmp.6);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 135 8 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :setColor;
+        %tmp.9 = getm $.Toybox.Graphics;
+        %tmp.10 = getv %tmp.9 :COLOR_TRANSPARENT;
+        %tmp.11 = getm $.Toybox.Graphics;
+        %tmp.12 = getv %tmp.11 :COLOR_BLACK;
+        invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 136 8 ]
+        %tmp.13 = lgetv %dc;
+        %tmp.14 = getv function %tmp.13 :clear;
+        invoke %tmp.13 %tmp.14();
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 138 8 ]
+        [ "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_129_40_start" "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_129_40_stop" ]
+        %pos.1 = local;
+        %tmp.15 = 0;
+        lputv %pos.1 %tmp.15;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 139 8 ]
+        %tmp.16 = self;
+        %tmp.17 = getv function %tmp.16 :ant;
+        invoke %tmp.16 %tmp.17();
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 142 8 ]
+        %tmp.18 = lgetv %dc;
+        %tmp.19 = getv function %tmp.18 :setColor;
+        %tmp.20 = getm $.Toybox.Graphics;
+        %tmp.21 = getv %tmp.20 :COLOR_GREEN;
+        %tmp.22 = getm $.Toybox.Graphics;
+        %tmp.23 = getv %tmp.22 :COLOR_TRANSPARENT;
+        invoke %tmp.18 %tmp.19(%tmp.21, %tmp.23);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 143 8 ]
+        %tmp.25 = lgetv %pos.1;
+        %tmp.26 = getm $.Toybox.Graphics;
+        %tmp.27 = getv function %tmp.26 :getFontHeight;
+        %tmp.28 = getm $.Toybox.Graphics;
+        %tmp.29 = getv %tmp.28 :FONT_SMALL;
+        %tmp.30 = invoke %tmp.26 %tmp.27(%tmp.29);
+        %tmp.31 = add %tmp.25 %tmp.30;
+        lputv %pos.1 %tmp.31;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 144 8 ]
+        %tmp.32 = lgetv %dc;
+        %tmp.33 = getv function %tmp.32 :drawText;
+        %tmp.34 = lgetv %dc;
+        %tmp.35 = getv function %tmp.34 :getWidth;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        %tmp.37 = 2;
+        %tmp.38 = div %tmp.36 %tmp.37;
+        %tmp.40 = lgetv %pos.1;
+        %tmp.41 = getm $.Toybox.Graphics;
+        %tmp.42 = getv %tmp.41 :FONT_MEDIUM;
+        %tmp.43 = "Long: ";
+        %tmp.45 = getv ? :locTop;
+        %tmp.46 = add %tmp.43 %tmp.45;
+        %tmp.47 = getm $.Toybox.Graphics;
+        %tmp.48 = getv %tmp.47 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.32 %tmp.33(%tmp.38, %tmp.40, %tmp.42, %tmp.46, %tmp.48);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 145 8 ]
+        %tmp.50 = lgetv %pos.1;
+        %tmp.51 = getm $.Toybox.Graphics;
+        %tmp.52 = getv function %tmp.51 :getFontHeight;
+        %tmp.53 = getm $.Toybox.Graphics;
+        %tmp.54 = getv %tmp.53 :FONT_MEDIUM;
+        %tmp.55 = invoke %tmp.51 %tmp.52(%tmp.54);
+        %tmp.56 = add %tmp.50 %tmp.55;
+        lputv %pos.1 %tmp.56;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 146 8 ]
+        %tmp.57 = lgetv %dc;
+        %tmp.58 = getv function %tmp.57 :drawText;
+        %tmp.59 = lgetv %dc;
+        %tmp.60 = getv function %tmp.59 :getWidth;
+        %tmp.61 = invoke %tmp.59 %tmp.60();
+        %tmp.62 = 2;
+        %tmp.63 = div %tmp.61 %tmp.62;
+        %tmp.65 = lgetv %pos.1;
+        %tmp.66 = getm $.Toybox.Graphics;
+        %tmp.67 = getv %tmp.66 :FONT_MEDIUM;
+        %tmp.68 = "Lat: ";
+        %tmp.70 = getv ? :locBot;
+        %tmp.71 = add %tmp.68 %tmp.70;
+        %tmp.72 = getm $.Toybox.Graphics;
+        %tmp.73 = getv %tmp.72 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.57 %tmp.58(%tmp.63, %tmp.65, %tmp.67, %tmp.71, %tmp.73);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 147 8 ]
+        %tmp.75 = lgetv %pos.1;
+        %tmp.76 = getm $.Toybox.Graphics;
+        %tmp.77 = getv function %tmp.76 :getFontHeight;
+        %tmp.78 = getm $.Toybox.Graphics;
+        %tmp.79 = getv %tmp.78 :FONT_MEDIUM;
+        %tmp.80 = invoke %tmp.76 %tmp.77(%tmp.79);
+        %tmp.81 = add %tmp.75 %tmp.80;
+        lputv %pos.1 %tmp.81;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 148 8 ]
+        %tmp.82 = lgetv %dc;
+        %tmp.83 = getv function %tmp.82 :drawText;
+        %tmp.84 = lgetv %dc;
+        %tmp.85 = getv function %tmp.84 :getWidth;
+        %tmp.86 = invoke %tmp.84 %tmp.85();
+        %tmp.87 = 2;
+        %tmp.88 = div %tmp.86 %tmp.87;
+        %tmp.90 = lgetv %pos.1;
+        %tmp.91 = getm $.Toybox.Graphics;
+        %tmp.92 = getv %tmp.91 :FONT_MEDIUM;
+        %tmp.93 = "Strength: ";
+        %tmp.95 = getv ? :signalStrength;
+        %tmp.96 = add %tmp.93 %tmp.95;
+        %tmp.97 = getm $.Toybox.Graphics;
+        %tmp.98 = getv %tmp.97 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.82 %tmp.83(%tmp.88, %tmp.90, %tmp.92, %tmp.96, %tmp.98);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 149 8 ]
+        %tmp.100 = lgetv %pos.1;
+        %tmp.101 = getm $.Toybox.Graphics;
+        %tmp.102 = getv function %tmp.101 :getFontHeight;
+        %tmp.103 = getm $.Toybox.Graphics;
+        %tmp.104 = getv %tmp.103 :FONT_MEDIUM;
+        %tmp.105 = invoke %tmp.101 %tmp.102(%tmp.104);
+        %tmp.106 = add %tmp.100 %tmp.105;
+        lputv %pos.1 %tmp.106;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 150 8 ]
+        %tmp.107 = lgetv %dc;
+        %tmp.108 = getv function %tmp.107 :setColor;
+        %tmp.109 = getm $.Toybox.Graphics;
+        %tmp.110 = getv %tmp.109 :COLOR_BLUE;
+        %tmp.111 = getm $.Toybox.Graphics;
+        %tmp.112 = getv %tmp.111 :COLOR_TRANSPARENT;
+        invoke %tmp.107 %tmp.108(%tmp.110, %tmp.112);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 151 8 ]
+        %tmp.113 = lgetv %dc;
+        %tmp.114 = getv function %tmp.113 :drawText;
+        %tmp.115 = lgetv %dc;
+        %tmp.116 = getv function %tmp.115 :getWidth;
+        %tmp.117 = invoke %tmp.115 %tmp.116();
+        %tmp.118 = 2;
+        %tmp.119 = div %tmp.117 %tmp.118;
+        %tmp.121 = lgetv %pos.1;
+        %tmp.122 = getm $.Toybox.Graphics;
+        %tmp.123 = getv %tmp.122 :FONT_MEDIUM;
+        %tmp.124 = "Wifi: ";
+        %tmp.126 = getv ? :wifiStatus;
+        %tmp.127 = add %tmp.124 %tmp.126;
+        %tmp.128 = getm $.Toybox.Graphics;
+        %tmp.129 = getv %tmp.128 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.113 %tmp.114(%tmp.119, %tmp.121, %tmp.123, %tmp.127, %tmp.129);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 152 8 ]
+        %tmp.131 = lgetv %pos.1;
+        %tmp.132 = getm $.Toybox.Graphics;
+        %tmp.133 = getv function %tmp.132 :getFontHeight;
+        %tmp.134 = getm $.Toybox.Graphics;
+        %tmp.135 = getv %tmp.134 :FONT_MEDIUM;
+        %tmp.136 = invoke %tmp.132 %tmp.133(%tmp.135);
+        %tmp.137 = add %tmp.131 %tmp.136;
+        lputv %pos.1 %tmp.137;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 153 8 ]
+        %tmp.138 = lgetv %dc;
+        %tmp.139 = getv function %tmp.138 :drawText;
+        %tmp.140 = lgetv %dc;
+        %tmp.141 = getv function %tmp.140 :getWidth;
+        %tmp.142 = invoke %tmp.140 %tmp.141();
+        %tmp.143 = 2;
+        %tmp.144 = div %tmp.142 %tmp.143;
+        %tmp.146 = lgetv %pos.1;
+        %tmp.147 = getm $.Toybox.Graphics;
+        %tmp.148 = getv %tmp.147 :FONT_MEDIUM;
+        %tmp.149 = "Error: ";
+        %tmp.151 = getv ? :errorCode;
+        %tmp.152 = add %tmp.149 %tmp.151;
+        %tmp.153 = getm $.Toybox.Graphics;
+        %tmp.154 = getv %tmp.153 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.138 %tmp.139(%tmp.144, %tmp.146, %tmp.148, %tmp.152, %tmp.154);
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_129_40_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 159; ]
+    function onHide() as Void {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_159_30_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 160 8 ]
+        %tmp.1 = getm $.Toybox.Position;
+        %tmp.2 = getv function %tmp.1 :enableLocationEvents;
+        %tmp.3 = getm $.Toybox.Position;
+        %tmp.4 = getv %tmp.3 :LOCATION_DISABLE;
+        %tmp.5 = self;
+        %tmp.6 = getv function %tmp.5 :method;
+        %tmp.8 = const :onPosition;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.9);
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_159_30_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 163; ]
+    function ant() {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_163_19_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 164 8 ]
+        [ "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_163_19_start" "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_163_19_stop" ]
+        %channelType.1 = local;
+        %tmp.1 = getm $.Toybox.Ant;
+        %tmp.2 = getv %tmp.1 :CHANNEL_TYPE_RX_NOT_TX;
+        lputv %channelType.1 %tmp.2;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 165 8 ]
+        [ "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_163_19_start" "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_163_19_stop" ]
+        %network.2 = local;
+        %tmp.3 = getm $.Toybox.Ant;
+        %tmp.4 = getv %tmp.3 :NETWORK_PUBLIC;
+        lputv %network.2 %tmp.4;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 166 8 ]
+        %tmp.7 = getm $.Toybox.Ant;
+        %tmp.8 = getv function ? %tmp.7 :ChannelAssignment;
+        %tmp.10 = lgetv %channelType.1;
+        %tmp.12 = lgetv %network.2;
+        %tmp.5 = newc %tmp.8 (%tmp.10, %tmp.12);
+        putv self :channelAssign %tmp.5;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 167 8 ]
+        %tmp.14 = getv ? :channelAssign;
+        %tmp.15 = getv function %tmp.14 :initialize;
+        %tmp.16 = self;
+        %tmp.17 = getv function %tmp.16 :method;
+        %tmp.19 = const :onMessage;
+        %tmp.20 = invoke %tmp.16 %tmp.17(%tmp.19);
+        %tmp.22 = getv ? :channelAssign;
+        invoke %tmp.14 %tmp.15(%tmp.20, %tmp.22);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 168 8 ]
+        %tmp.23 = getm $.Toybox.System;
+        %tmp.24 = getv function %tmp.23 :println;
+        %tmp.25 = "success";
+        invoke %tmp.23 %tmp.24(%tmp.25);
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_163_19_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 171; ]
+    function onMessage(msg) {
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_171_28_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 172 8 ]
+        [ "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_171_28_start" "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_171_28_stop" ]
+        %payload.1 = local;
+        %tmp.1 = lgetv %msg;
+        %tmp.2 = getv function %tmp.1 :getPayload;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %payload.1 %tmp.3;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 173 8 ]
+        [ "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_171_28_start" "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_171_28_stop" ]
+        %data.2 = local;
+        %tmp.5 = lgetv %msg;
+        %tmp.6 = getv %tmp.5 :length;
+        %tmp.4 = newa %tmp.6;
+        lputv %data.2 %tmp.4;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 176 8 ]
+        for @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_8_for_test @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_8_for_incr @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_8_for_end;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_8_for_init:
+        [ "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_8_for_begin" "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_8_for_end" ]
+        %i.3 = local;
+        %tmp.7 = 0;
+        lputv %i.3 %tmp.7;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_8_for_test:
+        %tmp.9 = lgetv %i.3;
+        %tmp.10 = lgetv %msg;
+        %tmp.11 = getv %tmp.10 :length;
+        %tmp.12 = lt %tmp.9 %tmp.11;
+        bf %tmp.12 @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_8_for_end;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_8_for_begin:
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_45_start:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 177 12 ]
+        %tmp.13 = lgetv %data.2;
+        %tmp.15 = lgetv %i.3;
+        %tmp.17 = lgetv %i.3;
+        aputv %tmp.13 %tmp.17 %tmp.15;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_45_stop:
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_8_for_incr:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 176 ]
+        %tmp.20 = lgetv %i.3;
+        %tmp.21 = add %tmp.20 1;
+        lputv %i.3 %tmp.21;
+        goto @C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_8_for_test;
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_176_8_for_end:
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 179 8 ]
+        [ "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_171_28_start" "C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_171_28_stop" ]
+        %message.4 = local;
+        %tmp.24 = getm $.Toybox.Ant;
+        %tmp.25 = getv function ? %tmp.24 :Message;
+        %tmp.22 = newc %tmp.25 ();
+        lputv %message.4 %tmp.22;
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 180 8 ]
+        %tmp.26 = lgetv %message.4;
+        %tmp.27 = getv function %tmp.26 :setPayload;
+        %tmp.29 = lgetv %data.2;
+        invoke %tmp.26 %tmp.27(%tmp.29);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 183 8 ]
+        %tmp.31 = getv ? :GenericChannel;
+        %tmp.32 = getv function %tmp.31 :sendBroadcast;
+        %tmp.34 = lgetv %message.4;
+        invoke %tmp.31 %tmp.32(%tmp.34);
+[ "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc" 184 8 ]
+        %tmp.35 = getm $.Toybox.System;
+        %tmp.36 = getv function %tmp.35 :println;
+        %tmp.38 = lgetv %message.4;
+        invoke %tmp.35 %tmp.36(%tmp.38);
+C_Users_Zezos_Desktop_Garm_watchapp_source_watchappView_mc_171_28_stop:
+    }
+}
+[ @file = "C:\Users\Zezos\Desktop\Garm\watchapp\source\watchappView.mc"; @line = 1; ]
+<init> {
+}
