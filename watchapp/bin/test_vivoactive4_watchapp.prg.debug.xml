@@ -1,201 +1,262 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
-<manifest filename="C:\Users\Zezos\Desktop\Garm\watchapp\manifest.xml"/>
+<manifest filename="C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\manifest.xml"/>
 <pcToLineNum>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappMenuDelegate.mc" id="1" lineNum="5" parent="globals/watchappMenuDelegate" pc="268435460" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappMenuDelegate.mc" id="2" lineNum="11" parent="globals/watchappMenuDelegate" pc="268435479" symbol="onMenuItem"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappMenuDelegate.mc" id="2" lineNum="12" parent="globals/watchappMenuDelegate" pc="268435481" symbol="onMenuItem"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappMenuDelegate.mc" id="2" lineNum="13" parent="globals/watchappMenuDelegate" pc="268435492" symbol="onMenuItem"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappMenuDelegate.mc" id="2" lineNum="14" parent="globals/watchappMenuDelegate" pc="268435516" symbol="onMenuItem"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappMenuDelegate.mc" id="2" lineNum="15" parent="globals/watchappMenuDelegate" pc="268435527" symbol="onMenuItem"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappMenuDelegate.mc" id="3" lineNum="7" parent="globals/watchappMenuDelegate" pc="268435552" symbol="initialize"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappMenuDelegate.mc" id="3" lineNum="8" parent="globals/watchappMenuDelegate" pc="268435554" symbol="initialize"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappApp.mc" id="4" lineNum="33" parent="globals" pc="268435573" symbol="getApp"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappApp.mc" id="4" lineNum="34" parent="globals" pc="268435583" symbol="getApp"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="5" lineNum="9" parent="globals/watchappView" pc="268435599" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="5" lineNum="10" parent="globals/watchappView" pc="268435617" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="7" lineNum="55" parent="globals/watchappView" pc="268435632" symbol="onPosition"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="7" lineNum="56" parent="globals/watchappView" pc="268435634" symbol="onPosition"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="7" lineNum="57" parent="globals/watchappView" pc="268435644" symbol="onPosition"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="8" lineNum="38" parent="globals/watchappView" pc="268435661" symbol="onLayout"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="8" lineNum="39" parent="globals/watchappView" pc="268435663" symbol="onLayout"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="9" lineNum="31" parent="globals/watchappView" pc="268435705" symbol="onWifiConnectionStatus"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="9" lineNum="32" parent="globals/watchappView" pc="268435707" symbol="onWifiConnectionStatus"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="9" lineNum="33" parent="globals/watchappView" pc="268435723" symbol="onWifiConnectionStatus"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="9" lineNum="34" parent="globals/watchappView" pc="268435739" symbol="onWifiConnectionStatus"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="10" lineNum="26" parent="globals/watchappView" pc="268435748" symbol="initialize"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="10" lineNum="27" parent="globals/watchappView" pc="268435750" symbol="initialize"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="10" lineNum="28" parent="globals/watchappView" pc="268435768" symbol="initialize"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="11" lineNum="43" parent="globals/watchappView" pc="268435801" symbol="startPositioning"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="11" lineNum="46" parent="globals/watchappView" pc="268435805" symbol="startPositioning"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="11" lineNum="44" parent="globals/watchappView" pc="268435805" symbol="startPositioning"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="11" lineNum="47" parent="globals/watchappView" pc="268435851" symbol="startPositioning"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="11" lineNum="48" parent="globals/watchappView" pc="268435870" symbol="startPositioning"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="11" lineNum="49" parent="globals/watchappView" pc="268435895" symbol="startPositioning"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="11" lineNum="50" parent="globals/watchappView" pc="268435899" symbol="startPositioning"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="11" lineNum="52" parent="globals/watchappView" pc="268435929" symbol="startPositioning"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="12" lineNum="123" parent="globals/watchappView" pc="268435970" symbol="onHide"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="12" lineNum="124" parent="globals/watchappView" pc="268435972" symbol="onHide"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="66" parent="globals/watchappView" pc="268436010" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="67" parent="globals/watchappView" pc="268436014" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="68" parent="globals/watchappView" pc="268436022" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="69" parent="globals/watchappView" pc="268436043" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="70" parent="globals/watchappView" pc="268436055" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="72" parent="globals/watchappView" pc="268436078" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="73" parent="globals/watchappView" pc="268436101" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="76" parent="globals/watchappView" pc="268436122" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="77" parent="globals/watchappView" pc="268436153" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="78" parent="globals/watchappView" pc="268436175" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="81" parent="globals/watchappView" pc="268436197" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="82" parent="globals/watchappView" pc="268436219" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="83" parent="globals/watchappView" pc="268436255" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="13" lineNum="90" parent="globals/watchappView" pc="268436399" symbol="alg"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="95" parent="globals/watchappView" pc="268436421" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="98" parent="globals/watchappView" pc="268436425" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="101" parent="globals/watchappView" pc="268436445" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="102" parent="globals/watchappView" pc="268436467" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="104" parent="globals/watchappView" pc="268436479" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="105" parent="globals/watchappView" pc="268436486" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="106" parent="globals/watchappView" pc="268436493" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="107" parent="globals/watchappView" pc="268436498" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="108" parent="globals/watchappView" pc="268436520" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="109" parent="globals/watchappView" pc="268436545" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="110" parent="globals/watchappView" pc="268436600" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="111" parent="globals/watchappView" pc="268436625" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="112" parent="globals/watchappView" pc="268436680" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="113" parent="globals/watchappView" pc="268436705" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="114" parent="globals/watchappView" pc="268436727" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="115" parent="globals/watchappView" pc="268436782" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappView.mc" id="14" lineNum="116" parent="globals/watchappView" pc="268436807" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappDelegate.mc" id="15" lineNum="7" parent="globals/watchappDelegate" pc="268436866" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappDelegate.mc" id="16" lineNum="13" parent="globals/watchappDelegate" pc="268436885" symbol="onMenu"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappDelegate.mc" id="16" lineNum="14" parent="globals/watchappDelegate" pc="268436887" symbol="onMenu"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappDelegate.mc" id="16" lineNum="15" parent="globals/watchappDelegate" pc="268436972" symbol="onMenu"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappDelegate.mc" id="17" lineNum="9" parent="globals/watchappDelegate" pc="268436975" symbol="initialize"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappDelegate.mc" id="17" lineNum="10" parent="globals/watchappDelegate" pc="268436977" symbol="initialize"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="18" lineNum="7" parent="globals/Rez" pc="268436996" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappApp.mc" id="19" lineNum="8" parent="globals/watchappApp" pc="268437020" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappApp.mc" id="20" lineNum="18" parent="globals/watchappApp" pc="268437039" symbol="onStart"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappApp.mc" id="21" lineNum="27" parent="globals/watchappApp" pc="268437042" symbol="getInitialView"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappApp.mc" id="21" lineNum="28" parent="globals/watchappApp" pc="268437044" symbol="getInitialView"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappApp.mc" id="22" lineNum="10" parent="globals/watchappApp" pc="268437119" symbol="initialize"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappApp.mc" id="22" lineNum="11" parent="globals/watchappApp" pc="268437121" symbol="initialize"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\source\\watchappApp.mc" id="23" lineNum="23" parent="globals/watchappApp" pc="268437140" symbol="onStop"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="24" lineNum="20" parent="globals/Rez/Layouts" pc="268437143" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="24" lineNum="21" parent="globals/Rez/Layouts" pc="268437155" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="24" lineNum="23" parent="globals/Rez/Layouts" pc="268437286" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="24" lineNum="24" parent="globals/Rez/Layouts" pc="268437391" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="24" lineNum="26" parent="globals/Rez/Layouts" pc="268437431" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="25" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268437458" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="26" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268437477" symbol="initialize"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="26" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268437479" symbol="initialize"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="26" lineNum="34" parent="globals/Rez/Menus/MainMenu" pc="268437497" symbol="initialize"/>
-<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="26" lineNum="35" parent="globals/Rez/Menus/MainMenu" pc="268437553" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappMenuDelegate.mc" id="1" lineNum="5" parent="globals/watchappMenuDelegate" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappMenuDelegate.mc" id="2" lineNum="11" parent="globals/watchappMenuDelegate" pc="268435479" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappMenuDelegate.mc" id="2" lineNum="12" parent="globals/watchappMenuDelegate" pc="268435481" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappMenuDelegate.mc" id="2" lineNum="13" parent="globals/watchappMenuDelegate" pc="268435492" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappMenuDelegate.mc" id="2" lineNum="14" parent="globals/watchappMenuDelegate" pc="268435516" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappMenuDelegate.mc" id="2" lineNum="15" parent="globals/watchappMenuDelegate" pc="268435527" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappMenuDelegate.mc" id="3" lineNum="7" parent="globals/watchappMenuDelegate" pc="268435552" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappMenuDelegate.mc" id="3" lineNum="8" parent="globals/watchappMenuDelegate" pc="268435554" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappApp.mc" id="4" lineNum="31" parent="globals" pc="268435573" symbol="getApp"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappApp.mc" id="4" lineNum="32" parent="globals" pc="268435583" symbol="getApp"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="5" lineNum="11" parent="globals/watchappView" pc="268435599" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="5" lineNum="12" parent="globals/watchappView" pc="268435617" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="5" lineNum="31" parent="globals/watchappView" pc="268435631" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="6" lineNum="39" parent="globals/watchappView" pc="268435666" symbol="checkConnection"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="6" lineNum="40" parent="globals/watchappView" pc="268435668" symbol="checkConnection"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="6" lineNum="41" parent="globals/watchappView" pc="268435700" symbol="checkConnection"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="7" lineNum="70" parent="globals/watchappView" pc="268435717" symbol="onPosition"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="7" lineNum="71" parent="globals/watchappView" pc="268435719" symbol="onPosition"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="8" lineNum="81" parent="globals/watchappView" pc="268435730" symbol="initializeGPS"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="8" lineNum="82" parent="globals/watchappView" pc="268435732" symbol="initializeGPS"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="8" lineNum="83" parent="globals/watchappView" pc="268435746" symbol="initializeGPS"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="8" lineNum="84" parent="globals/watchappView" pc="268435758" symbol="initializeGPS"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="9" lineNum="45" parent="globals/watchappView" pc="268435772" symbol="onWifiConnectionStatus"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="9" lineNum="46" parent="globals/watchappView" pc="268435774" symbol="onWifiConnectionStatus"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="9" lineNum="47" parent="globals/watchappView" pc="268435790" symbol="onWifiConnectionStatus"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="9" lineNum="48" parent="globals/watchappView" pc="268435806" symbol="onWifiConnectionStatus"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="10" lineNum="57" parent="globals/watchappView" pc="268435815" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="10" lineNum="58" parent="globals/watchappView" pc="268435819" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="10" lineNum="60" parent="globals/watchappView" pc="268435819" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="10" lineNum="61" parent="globals/watchappView" pc="268435865" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="10" lineNum="62" parent="globals/watchappView" pc="268435884" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="10" lineNum="63" parent="globals/watchappView" pc="268435909" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="10" lineNum="66" parent="globals/watchappView" pc="268435925" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="11" lineNum="157" parent="globals/watchappView" pc="268435966" symbol="onHide"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="11" lineNum="158" parent="globals/watchappView" pc="268435968" symbol="onHide"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="13" lineNum="52" parent="globals/watchappView" pc="268436006" symbol="onLayout"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="13" lineNum="53" parent="globals/watchappView" pc="268436008" symbol="onLayout"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="14" lineNum="89" parent="globals/watchappView" pc="268436050" symbol="checkGPSQuality"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="14" lineNum="90" parent="globals/watchappView" pc="268436054" symbol="checkGPSQuality"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="14" lineNum="91" parent="globals/watchappView" pc="268436077" symbol="checkGPSQuality"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="14" lineNum="93" parent="globals/watchappView" pc="268436099" symbol="checkGPSQuality"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="14" lineNum="96" parent="globals/watchappView" pc="268436136" symbol="checkGPSQuality"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="14" lineNum="97" parent="globals/watchappView" pc="268436167" symbol="checkGPSQuality"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="14" lineNum="98" parent="globals/watchappView" pc="268436189" symbol="checkGPSQuality"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="14" lineNum="101" parent="globals/watchappView" pc="268436211" symbol="checkGPSQuality"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="14" lineNum="102" parent="globals/watchappView" pc="268436233" symbol="checkGPSQuality"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="14" lineNum="103" parent="globals/watchappView" pc="268436269" symbol="checkGPSQuality"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="14" lineNum="109" parent="globals/watchappView" pc="268436410" symbol="checkGPSQuality"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="15" lineNum="113" parent="globals/watchappView" pc="268436427" symbol="trigger"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="15" lineNum="114" parent="globals/watchappView" pc="268436429" symbol="trigger"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="15" lineNum="116" parent="globals/watchappView" pc="268436437" symbol="trigger"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="15" lineNum="117" parent="globals/watchappView" pc="268436449" symbol="trigger"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="15" lineNum="119" parent="globals/watchappView" pc="268436464" symbol="trigger"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="15" lineNum="121" parent="globals/watchappView" pc="268436472" symbol="trigger"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="16" lineNum="33" parent="globals/watchappView" pc="268436486" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="16" lineNum="34" parent="globals/watchappView" pc="268436488" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="129" parent="globals/watchappView" pc="268436507" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="131" parent="globals/watchappView" pc="268436511" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="132" parent="globals/watchappView" pc="268436523" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="135" parent="globals/watchappView" pc="268436543" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="136" parent="globals/watchappView" pc="268436565" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="138" parent="globals/watchappView" pc="268436577" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="140" parent="globals/watchappView" pc="268436584" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="141" parent="globals/watchappView" pc="268436606" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="142" parent="globals/watchappView" pc="268436631" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="143" parent="globals/watchappView" pc="268436686" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="144" parent="globals/watchappView" pc="268436711" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="145" parent="globals/watchappView" pc="268436766" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="146" parent="globals/watchappView" pc="268436791" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="147" parent="globals/watchappView" pc="268436846" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="148" parent="globals/watchappView" pc="268436871" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="149" parent="globals/watchappView" pc="268436893" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="150" parent="globals/watchappView" pc="268436948" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappView.mc" id="17" lineNum="151" parent="globals/watchappView" pc="268436973" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="18" lineNum="18" parent="globals/wifiScan" pc="268437029" symbol="getError"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="18" lineNum="19" parent="globals/wifiScan" pc="268437031" symbol="getError"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="19" lineNum="24" parent="globals/wifiScan" pc="268437040" symbol="checkWifiConnection"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="19" lineNum="25" parent="globals/wifiScan" pc="268437042" symbol="checkWifiConnection"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="19" lineNum="26" parent="globals/wifiScan" pc="268437074" symbol="checkWifiConnection"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="20" lineNum="8" parent="globals/wifiScan" pc="268437098" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="20" lineNum="9" parent="globals/wifiScan" pc="268437100" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="21" lineNum="30" parent="globals/wifiScan" pc="268437133" symbol="onWifiConnectionStatus"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="21" lineNum="31" parent="globals/wifiScan" pc="268437135" symbol="onWifiConnectionStatus"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="21" lineNum="32" parent="globals/wifiScan" pc="268437151" symbol="onWifiConnectionStatus"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="21" lineNum="34" parent="globals/wifiScan" pc="268437167" symbol="onWifiConnectionStatus"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="22" lineNum="12" parent="globals/wifiScan" pc="268437200" symbol="getStatus"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="22" lineNum="13" parent="globals/wifiScan" pc="268437202" symbol="getStatus"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\wifichecker.mc" id="22" lineNum="14" parent="globals/wifiScan" pc="268437234" symbol="getStatus"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappDelegate.mc" id="23" lineNum="7" parent="globals/watchappDelegate" pc="268437243" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappDelegate.mc" id="24" lineNum="13" parent="globals/watchappDelegate" pc="268437262" symbol="onMenu"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappDelegate.mc" id="24" lineNum="14" parent="globals/watchappDelegate" pc="268437264" symbol="onMenu"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappDelegate.mc" id="24" lineNum="15" parent="globals/watchappDelegate" pc="268437349" symbol="onMenu"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappDelegate.mc" id="25" lineNum="9" parent="globals/watchappDelegate" pc="268437352" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappDelegate.mc" id="25" lineNum="10" parent="globals/watchappDelegate" pc="268437354" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="26" lineNum="7" parent="globals/Rez" pc="268437373" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappApp.mc" id="27" lineNum="8" parent="globals/watchappApp" pc="268437397" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappApp.mc" id="27" lineNum="9" parent="globals/watchappApp" pc="268437415" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappApp.mc" id="28" lineNum="15" parent="globals/watchappApp" pc="268437450" symbol="onStart"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappApp.mc" id="28" lineNum="16" parent="globals/watchappApp" pc="268437452" symbol="onStart"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappApp.mc" id="28" lineNum="17" parent="globals/watchappApp" pc="268437470" symbol="onStart"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappApp.mc" id="29" lineNum="25" parent="globals/watchappApp" pc="268437489" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappApp.mc" id="29" lineNum="26" parent="globals/watchappApp" pc="268437491" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappApp.mc" id="30" lineNum="10" parent="globals/watchappApp" pc="268437566" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappApp.mc" id="30" lineNum="11" parent="globals/watchappApp" pc="268437568" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\watchappApp.mc" id="31" lineNum="21" parent="globals/watchappApp" pc="268437587" symbol="onStop"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="32" lineNum="7" parent="globals/GPSQuality" pc="268437590" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="32" lineNum="8" parent="globals/GPSQuality" pc="268437590" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="33" lineNum="36" parent="globals/GPSQuality" pc="268437605" symbol="onPosition"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="33" lineNum="37" parent="globals/GPSQuality" pc="268437609" symbol="onPosition"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="33" lineNum="38" parent="globals/GPSQuality" pc="268437619" symbol="onPosition"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="35" lineNum="15" parent="globals/GPSQuality" pc="268437639" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="35" lineNum="16" parent="globals/GPSQuality" pc="268437641" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="35" lineNum="17" parent="globals/GPSQuality" pc="268437646" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="35" lineNum="19" parent="globals/GPSQuality" pc="268437677" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="35" lineNum="20" parent="globals/GPSQuality" pc="268437699" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="35" lineNum="22" parent="globals/GPSQuality" pc="268437730" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="35" lineNum="23" parent="globals/GPSQuality" pc="268437752" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="35" lineNum="25" parent="globals/GPSQuality" pc="268437783" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="35" lineNum="27" parent="globals/GPSQuality" pc="268437808" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="35" lineNum="29" parent="globals/GPSQuality" pc="268437823" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="35" lineNum="31" parent="globals/GPSQuality" pc="268437872" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\source\\GPS.mc" id="35" lineNum="33" parent="globals/GPSQuality" pc="268437898" symbol="startPositioning"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="36" lineNum="20" parent="globals/Rez/Layouts" pc="268437939" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="36" lineNum="21" parent="globals/Rez/Layouts" pc="268437951" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="36" lineNum="23" parent="globals/Rez/Layouts" pc="268438082" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="36" lineNum="24" parent="globals/Rez/Layouts" pc="268438187" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="36" lineNum="26" parent="globals/Rez/Layouts" pc="268438227" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="37" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268438254" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="38" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268438273" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="38" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268438275" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="38" lineNum="34" parent="globals/Rez/Menus/MainMenu" pc="268438293" symbol="initialize"/>
+<entry filename="C:\\Users\\Zezos\\Desktop\\Garm\\Gitrepo\\Flexible-Recording\\watchapp\\bin\\gen\\006-B3225-00\\source\\Rez.mcgen" id="38" lineNum="35" parent="globals/Rez/Menus/MainMenu" pc="268438349" symbol="initialize"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
 <entry id="8389346" symbol="text"/>
 <entry id="8391711" symbol="constellations"/>
 <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="16" method="true" symbol="checkConnection"/>
 <entry id="7" module="true" symbol="globals/Rez/Menus"/>
-<entry field="true" id="14" symbol="locBot"/>
+<entry field="true" id="20" symbol="locBot"/>
 <entry id="8391715" symbol="acquisitionType"/>
-<entry field="true" id="21" symbol="posquality"/>
-<entry id="31" method="true" symbol="MainLayout"/>
-<entry field="true" id="20" symbol="posInfo"/>
+<entry field="true" id="28" symbol="posquality"/>
+<entry id="42" method="true" symbol="MainLayout"/>
+<entry field="true" id="27" symbol="posInfo"/>
 <entry field="true" id="8389250" symbol="timestamp"/>
-<entry field="true" id="22" symbol="progressDots"/>
-<entry id="17" method="true" symbol="onPosition"/>
+<entry field="true" id="29" symbol="progressDots"/>
+<entry id="24" method="true" symbol="onPosition"/>
 <entry id="8388924" module="true" symbol="Gregorian"/>
-<entry field="true" id="23" symbol="progressTimer"/>
+<entry field="true" id="30" symbol="progressTimer"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry id="24" method="true" symbol="startPositioning"/>
-<entry id="9" object="true" symbol="watchappApp"/>
+<entry id="8391605" method="true" symbol="checkWifiConnection"/>
+<entry id="32" method="true" symbol="startPositioning"/>
+<entry id="10" object="true" symbol="watchappApp"/>
 <entry id="8392043" symbol="configuration"/>
-<entry field="true" id="33" symbol="AppName"/>
-<entry id="13" method="true" symbol="alg"/>
-<entry field="true" id="15" symbol="locTop"/>
+<entry field="true" id="18" symbol="gpsStatus"/>
+<entry id="37" method="true" symbol="getStatus"/>
+<entry id="8388634" module="true" symbol="Ant"/>
+<entry field="true" id="44" symbol="AppName"/>
+<entry field="true" id="21" symbol="locTop"/>
 <entry id="8" module="true" symbol="globals/Rez/Strings"/>
 <entry field="true" id="8391716" symbol="errorCode"/>
+<entry id="34" method="true" symbol="trigger"/>
 <entry id="8389080" method="true" symbol="onMenu"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
 <entry id="8389345" symbol="rezId"/>
 <entry id="8388631" module="true" symbol="Activity"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
 <entry id="2" module="true" symbol="globals/Rez"/>
-<entry field="true" id="40" symbol="prompt"/>
-<entry field="true" id="30" symbol="id_monkey"/>
+<entry field="true" id="51" symbol="prompt"/>
+<entry field="true" id="41" symbol="id_monkey"/>
+<entry field="true" id="8391706" symbol="CONSTELLATION_GLONASS"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
-<entry field="true" id="41" symbol="usable"/>
+<entry field="true" id="52" symbol="usable"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389348" symbol="font"/>
-<entry id="43" symbol="item_2"/>
-<entry id="42" symbol="item_1"/>
-<entry id="28" module="true" symbol="Menus"/>
+<entry id="54" symbol="item_2"/>
+<entry id="53" symbol="item_1"/>
+<entry id="39" module="true" symbol="Menus"/>
 <entry id="8389275" method="true" symbol="getApp"/>
 <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="15" symbol="channelAssign"/>
 <entry field="true" id="8389063" symbol="identifier"/>
-<entry field="true" id="25" symbol="time"/>
+<entry field="true" id="33" symbol="time"/>
 <entry id="8389349" symbol="justification"/>
-<entry id="18" method="true" symbol="onWifiConnectionStatus"/>
+<entry id="25" method="true" symbol="onWifiConnectionStatus"/>
 <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
 <entry id="8388637" module="true" symbol="Communications"/>
-<entry id="11" object="true" symbol="watchappMenuDelegate"/>
+<entry id="9" object="true" symbol="GPSQuality"/>
+<entry id="12" object="true" symbol="watchappMenuDelegate"/>
 <entry id="8391714" symbol="wifiAvailable"/>
 <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-<entry field="true" id="34" symbol="good"/>
-<entry field="true" id="35" symbol="lastKnown"/>
-<entry id="32" object="true" symbol="MainMenu"/>
+<entry field="true" id="45" symbol="good"/>
+<entry field="true" id="46" symbol="lastKnown"/>
+<entry id="43" object="true" symbol="MainMenu"/>
+<entry id="36" method="true" symbol="getError"/>
+<entry id="19" method="true" symbol="initializeGPS"/>
 <entry id="8388644" module="true" symbol="System"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="14" object="true" symbol="wifiScan"/>
+<entry id="17" method="true" symbol="checkGPSQuality"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry field="true" id="29" symbol="LauncherIcon"/>
+<entry field="true" id="40" symbol="LauncherIcon"/>
 <entry id="8388610" symbol="statics"/>
 <entry id="8389123" method="true" symbol="onShow"/>
 <entry id="8388643" module="true" symbol="Sensor"/>
 <entry id="8389350" module="true" symbol="globals"/>
+<entry field="true" id="23" symbol="myTimer"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
 <entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="31" symbol="signalStrength"/>
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry id="8389109" method="true" symbol="onMenuItem"/>
 <entry id="8389347" symbol="color"/>
-<entry field="true" id="26" symbol="wifiStatus"/>
+<entry field="true" id="35" symbol="wifiStatus"/>
 <entry id="8388646" module="true" object="true" symbol="Timer"/>
-<entry id="27" module="true" symbol="Layouts"/>
-<entry field="true" id="38" symbol="notAvailable"/>
-<entry field="true" id="39" symbol="poor"/>
+<entry id="38" module="true" symbol="Layouts"/>
+<entry field="true" id="49" symbol="notAvailable"/>
+<entry field="true" id="50" symbol="poor"/>
 <entry id="8388642" module="true" symbol="Position"/>
-<entry field="true" id="19" symbol="options"/>
+<entry field="true" id="26" symbol="options"/>
 <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
 <entry field="true" id="8390484" symbol="wifi"/>
 <entry id="8389125" method="true" symbol="onHide"/>
-<entry id="10" object="true" symbol="watchappDelegate"/>
-<entry id="12" object="true" symbol="watchappView"/>
-<entry field="true" id="16" symbol="location"/>
+<entry id="11" object="true" symbol="watchappDelegate"/>
+<entry id="13" object="true" symbol="watchappView"/>
+<entry field="true" id="22" symbol="location"/>
 <entry id="8388635" module="true" symbol="Application"/>
-<entry field="true" id="37" symbol="menu_label_2"/>
-<entry field="true" id="36" symbol="menu_label_1"/>
+<entry field="true" id="48" symbol="menu_label_2"/>
+<entry field="true" id="47" symbol="menu_label_1"/>
 </symbolTable>
 <localVars>
 <entry arg="true" endPc="268435551" name="item" stackId="1" startPc="268435479"/>
-<entry arg="true" endPc="268435660" name="info" stackId="1" startPc="268435632"/>
-<entry arg="true" endPc="268435704" name="dc" stackId="1" startPc="268435661"/>
-<entry arg="true" endPc="268435747" name="wifi" stackId="1" startPc="268435705"/>
-<entry endPc="268435923" name="ex" stackId="1" startPc="268435895"/>
-<entry arg="true" endPc="268436420" name="wifiStatus" stackId="1" startPc="268436010"/>
-<entry endPc="268436392" name="formattedTime" stackId="2" startPc="268436101"/>
-<entry arg="true" endPc="268436865" name="dc" stackId="1" startPc="268436421"/>
-<entry endPc="268436864" name="pos" stackId="2" startPc="268436425"/>
-<entry endPc="268436864" name="signalStrength" stackId="3" startPc="268436425"/>
-<entry arg="true" endPc="268437457" name="dc" stackId="1" startPc="268437143"/>
-<entry endPc="268437457" name="rez_cmp_local_text_1798189373" stackId="2" startPc="268437155"/>
-<entry endPc="268437457" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268437155"/>
+<entry arg="true" endPc="268435729" name="info" stackId="1" startPc="268435717"/>
+<entry arg="true" endPc="268435814" name="wifi" stackId="1" startPc="268435772"/>
+<entry endPc="268435919" name="ex" stackId="1" startPc="268435909"/>
+<entry arg="true" endPc="268436049" name="dc" stackId="1" startPc="268436006"/>
+<entry endPc="268436406" name="formattedTime" stackId="1" startPc="268436136"/>
+<entry arg="true" endPc="268436485" name="wifiStatus" stackId="1" startPc="268436427"/>
+<entry arg="true" endPc="268437028" name="dc" stackId="1" startPc="268436507"/>
+<entry endPc="268437027" name="pos" stackId="2" startPc="268436511"/>
+<entry arg="true" endPc="268437199" name="result" stackId="1" startPc="268437133"/>
+<entry arg="true" endPc="268437488" name="state" stackId="1" startPc="268437450"/>
+<entry arg="true" endPc="268437638" name="info" stackId="1" startPc="268437605"/>
+<entry endPc="268437637" name="myLocation" stackId="2" startPc="268437609"/>
+<entry arg="true" endPc="268437938" name="type" stackId="1" startPc="268437639"/>
+<entry arg="true" endPc="268438253" name="dc" stackId="1" startPc="268437939"/>
+<entry endPc="268438253" name="rez_cmp_local_text_2038307678" stackId="2" startPc="268437951"/>
+<entry endPc="268438253" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268437951"/>
 </localVars>
 <annotations>
 <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -212,18 +273,20 @@
 </annotations>
 <dataEntryOffsetMappings>
 <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
-<dataEntry label="globals/watchappMenuDelegate" offset="174" parentId="globals" symbolId="watchappMenuDelegate" type="class"/>
-<dataEntry label="globals/watchappView" offset="229" parentId="globals" symbolId="watchappView" type="class"/>
-<dataEntry label="globals/watchappDelegate" offset="444" parentId="globals" symbolId="watchappDelegate" type="class"/>
-<dataEntry label="globals/Rez" offset="499" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry label="globals/watchappApp" offset="578" parentId="globals" symbolId="watchappApp" type="class"/>
-<dataEntry label="globals/Rez/Drawables" offset="649" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry label="globals/Rez/Layouts" offset="696" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry label="globals/Rez/Menus" offset="735" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry label="globals/Rez/Fonts" offset="774" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry label="globals/Rez/Strings" offset="805" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry label="globals/Rez/JsonData" offset="908" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry label="globals/Rez/Menus/MainMenu" offset="939" parentId="Menus" symbolId="MainMenu" type="class"/>
+<dataEntry label="globals/watchappMenuDelegate" offset="190" parentId="globals" symbolId="watchappMenuDelegate" type="class"/>
+<dataEntry label="globals/watchappView" offset="245" parentId="globals" symbolId="watchappView" type="class"/>
+<dataEntry label="globals/wifiScan" offset="516" parentId="globals" symbolId="wifiScan" type="class"/>
+<dataEntry label="globals/watchappDelegate" offset="611" parentId="globals" symbolId="watchappDelegate" type="class"/>
+<dataEntry label="globals/Rez" offset="666" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/watchappApp" offset="745" parentId="globals" symbolId="watchappApp" type="class"/>
+<dataEntry label="globals/GPSQuality" offset="824" parentId="globals" symbolId="GPSQuality" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="895" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="942" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="981" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="1020" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="1051" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="1154" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Menus/MainMenu" offset="1185" parentId="Menus" symbolId="MainMenu" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="watchappMenuDelegate" startPc="268435460">
@@ -239,68 +302,110 @@
 <functionEntry accessMode="public" endPc="268435598" name="getApp" startPc="268435573">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435631" name="&lt;init&gt;" parent="watchappView" startPc="268435599">
+<functionEntry accessMode="public" endPc="268435665" name="&lt;init&gt;" parent="watchappView" startPc="268435599">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435716" name="checkConnection" parent="watchappView" startPc="268435666">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435729" name="onPosition" parent="watchappView" startPc="268435717">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435771" name="initializeGPS" parent="watchappView" startPc="268435730">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435814" name="onWifiConnectionStatus" parent="watchappView" startPc="268435772">
+<param id="wifi"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435965" name="startPositioning" parent="watchappView" startPc="268435815">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436005" name="onHide" parent="watchappView" startPc="268435966">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="onShow" parent="watchappView">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435660" name="onPosition" parent="watchappView" startPc="268435632">
-<param id="info"/>
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" endPc="268435704" name="onLayout" parent="watchappView" startPc="268435661">
+<functionEntry accessMode="public" endPc="268436049" name="onLayout" parent="watchappView" startPc="268436006">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435747" name="onWifiConnectionStatus" parent="watchappView" startPc="268435705">
-<param id="wifi"/>
+<functionEntry accessMode="public" endPc="268436426" name="checkGPSQuality" parent="watchappView" startPc="268436050">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435800" name="initialize" parent="watchappView" startPc="268435748">
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" endPc="268435969" name="startPositioning" parent="watchappView" startPc="268435801">
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" endPc="268436009" name="onHide" parent="watchappView" startPc="268435970">
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" endPc="268436420" name="alg" parent="watchappView" startPc="268436010">
+<functionEntry accessMode="public" endPc="268436485" name="trigger" parent="watchappView" startPc="268436427">
 <param id="wifiStatus"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436865" name="onUpdate" parent="watchappView" startPc="268436421">
+<functionEntry accessMode="public" endPc="268436506" name="initialize" parent="watchappView" startPc="268436486">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437028" name="onUpdate" parent="watchappView" startPc="268436507">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436884" name="&lt;init&gt;" parent="watchappDelegate" startPc="268436866">
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="wifiScan">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436974" name="onMenu" parent="watchappDelegate" startPc="268436885">
+<functionEntry accessMode="public" endPc="268437039" name="getError" parent="wifiScan" startPc="268437029">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436995" name="initialize" parent="watchappDelegate" startPc="268436975">
+<functionEntry accessMode="public" endPc="268437097" name="checkWifiConnection" parent="wifiScan" startPc="268437040">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437019" name="&lt;init&gt;" parent="Rez" startPc="268436996">
+<functionEntry accessMode="public" endPc="268437132" name="initialize" parent="wifiScan" startPc="268437098">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437038" name="&lt;init&gt;" parent="watchappApp" startPc="268437020">
+<functionEntry accessMode="public" endPc="268437199" name="onWifiConnectionStatus" parent="wifiScan" startPc="268437133">
+<param id="result"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437041" name="onStart" parent="watchappApp" startPc="268437039">
+<functionEntry accessMode="public" endPc="268437242" name="getStatus" parent="wifiScan" startPc="268437200">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437261" name="&lt;init&gt;" parent="watchappDelegate" startPc="268437243">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437351" name="onMenu" parent="watchappDelegate" startPc="268437262">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437372" name="initialize" parent="watchappDelegate" startPc="268437352">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437396" name="&lt;init&gt;" parent="Rez" startPc="268437373">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437449" name="&lt;init&gt;" parent="watchappApp" startPc="268437397">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437488" name="onStart" parent="watchappApp" startPc="268437450">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437118" name="getInitialView" parent="watchappApp" startPc="268437042">
+<functionEntry accessMode="public" endPc="268437565" name="getInitialView" parent="watchappApp" startPc="268437489">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437139" name="initialize" parent="watchappApp" startPc="268437119">
+<functionEntry accessMode="public" endPc="268437586" name="initialize" parent="watchappApp" startPc="268437566">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437142" name="onStop" parent="watchappApp" startPc="268437140">
+<functionEntry accessMode="public" endPc="268437589" name="onStop" parent="watchappApp" startPc="268437587">
 <param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437604" name="&lt;init&gt;" parent="GPSQuality" startPc="268437590">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437638" name="onPosition" parent="GPSQuality" startPc="268437605">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="GPSQuality">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437938" name="startPositioning" parent="GPSQuality" startPc="268437639">
+<param id="type"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -321,14 +426,14 @@
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437457" name="MainLayout" parent="Layouts" startPc="268437143">
+<functionEntry accessMode="public" endPc="268438253" name="MainLayout" parent="Layouts" startPc="268437939">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437476" name="&lt;init&gt;" parent="MainMenu" startPc="268437458">
+<functionEntry accessMode="public" endPc="268438272" name="&lt;init&gt;" parent="MainMenu" startPc="268438254">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437609" name="initialize" parent="MainMenu" startPc="268437477">
+<functionEntry accessMode="public" endPc="268438405" name="initialize" parent="MainMenu" startPc="268438273">
 <documentation/>
 </functionEntry>
 </functions>

@@ -1,0 +1,225 @@
+[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 1; ]
+import Toybox.Position;
+[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 2; ]
+using Toybox.System;
+[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 3; ]
+using Toybox.Time.Gregorian;
+[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 4; ]
+using Toybox.Lang;
+[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 7; ]
+class GPSQuality{
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 7; ]
+    <init> {
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 8 8 ]
+        %tmp.1 = newd 0;
+        putv self :options %tmp.1;
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 8; @position = 8; ]
+    var options;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 9; @position = 8; ]
+    var info;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 11; ]
+    function initialize() as Void {
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 16; ]
+    function startPositioning() {
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_16_32_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 17 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "StartPositioning is called";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 18 8 ]
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_18_8_if_stmt:
+        %tmp.5 = getm $.Toybox.Position;
+        %tmp.7 = const :hasConfigurationSupport;
+        %tmp.8 = canhazplz %tmp.5 %tmp.7;
+        bf %tmp.8 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_18_8_if_false;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_18_8_if_true:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_18_51_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 19 12 ]
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_19_12_if_stmt:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_19_16_begin:
+        %tmp.10 = getm $.Toybox.Position;
+        %tmp.11 = as %tmp.10 { (interface { var hasConfigurationSupport; }) };
+        %tmp.13 = const :CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5;
+        %tmp.14 = canhazplz %tmp.11 %tmp.13;
+        %tmp.15 = dup %tmp.14;
+        bf %tmp.15 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_20_12_end;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_20_12_true:
+        %tmp.16 = getm $.Toybox.Position;
+        %tmp.17 = getv function %tmp.16 :hasConfigurationSupport;
+        %tmp.18 = getm $.Toybox.Position;
+        %tmp.19 = getv %tmp.18 :CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5;
+        %tmp.20 = invoke %tmp.16 %tmp.17(%tmp.19);
+        %tmp.21 = and %tmp.14 %tmp.20;
+        push %tmp.21;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_20_12_end:
+        %tmp.22 = phi [%tmp.15 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_19_16_begin] [%tmp.21 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_20_12_true] [%tmp.22 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_20_12_end];
+        bf %tmp.22 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_19_12_if_false;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_19_12_if_true:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_20_105_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 21 16 ]
+        %tmp.23 = getv self :options;
+        %tmp.24 = getm $.Toybox.Position;
+        %tmp.25 = getv %tmp.24 :CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5;
+        %tmp.27 = const :configuration;
+        aputv %tmp.23 %tmp.27 %tmp.25;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_20_105_stop:
+        goto @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_19_12_if_end;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_19_12_if_false:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 22 19 ]
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_22_19_if_stmt:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_22_23_begin:
+        %tmp.29 = getm $.Toybox.Position;
+        %tmp.30 = as %tmp.29 { (interface { var hasConfigurationSupport; }) };
+        %tmp.32 = const :CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1;
+        %tmp.33 = canhazplz %tmp.30 %tmp.32;
+        %tmp.34 = dup %tmp.33;
+        bf %tmp.34 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_23_12_end;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_23_12_true:
+        %tmp.35 = getm $.Toybox.Position;
+        %tmp.36 = getv function %tmp.35 :hasConfigurationSupport;
+        %tmp.37 = getm $.Toybox.Position;
+        %tmp.38 = getv %tmp.37 :CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1;
+        %tmp.39 = invoke %tmp.35 %tmp.36(%tmp.38);
+        %tmp.40 = and %tmp.33 %tmp.39;
+        push %tmp.40;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_23_12_end:
+        %tmp.41 = phi [%tmp.34 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_22_23_begin] [%tmp.40 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_23_12_true] [%tmp.41 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_23_12_end];
+        bf %tmp.41 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_22_19_if_false;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_22_19_if_true:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_23_102_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 24 16 ]
+        %tmp.42 = getv self :options;
+        %tmp.43 = getm $.Toybox.Position;
+        %tmp.44 = getv %tmp.43 :CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1;
+        %tmp.46 = const :configuration;
+        aputv %tmp.42 %tmp.46 %tmp.44;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_23_102_stop:
+        goto @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_22_19_if_end;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_22_19_if_false:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 25 19 ]
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_25_19_if_stmt:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_25_23_begin:
+        %tmp.48 = getm $.Toybox.Position;
+        %tmp.49 = as %tmp.48 { (interface { var hasConfigurationSupport; }) };
+        %tmp.51 = const :CONFIGURATION_GPS;
+        %tmp.52 = canhazplz %tmp.49 %tmp.51;
+        %tmp.53 = dup %tmp.52;
+        bf %tmp.53 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_26_12_end;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_26_12_true:
+        %tmp.54 = getm $.Toybox.Position;
+        %tmp.55 = getv function %tmp.54 :hasConfigurationSupport;
+        %tmp.56 = getm $.Toybox.Position;
+        %tmp.57 = getv %tmp.56 :CONFIGURATION_GPS;
+        %tmp.58 = invoke %tmp.54 %tmp.55(%tmp.57);
+        %tmp.59 = and %tmp.52 %tmp.58;
+        push %tmp.59;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_26_12_end:
+        %tmp.60 = phi [%tmp.53 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_25_23_begin] [%tmp.59 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_26_12_true] [%tmp.60 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_26_12_end];
+        bf %tmp.60 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_25_19_if_end;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_25_19_if_true:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_26_76_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 27 16 ]
+        %tmp.61 = getv self :options;
+        %tmp.62 = getm $.Toybox.Position;
+        %tmp.63 = getv %tmp.62 :CONFIGURATION_GPS;
+        %tmp.65 = const :configuration;
+        aputv %tmp.61 %tmp.65 %tmp.63;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_26_76_stop:
+        goto @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_25_19_if_end;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_25_19_if_end:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_22_19_if_end:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_19_12_if_end:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_18_51_stop:
+        goto @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_18_8_if_end;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_18_8_if_false:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 29 15 ]
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_29_15_if_stmt:
+        %tmp.67 = getm $.Toybox.Position;
+        %tmp.68 = as %tmp.67 { (!interface { var hasConfigurationSupport; }) };
+        %tmp.70 = const :CONSTELLATION_GLONASS;
+        %tmp.71 = canhazplz %tmp.68 %tmp.70;
+        bf %tmp.71 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_29_15_if_end;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_29_15_if_true:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_29_56_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 31 12 ]
+        %tmp.72 = getv self :options;
+        %tmp.73 = newa 2;
+        %tmp.74 = getm $.Toybox.Position;
+        %tmp.75 = getv %tmp.74 :CONSTELLATION_GPS;
+        %tmp.76 = dup %tmp.73;
+        %tmp.77 = aputv %tmp.76 0 %tmp.75;
+        %tmp.78 = getm $.Toybox.Position;
+        %tmp.79 = getv %tmp.78 :CONSTELLATION_GLONASS;
+        %tmp.80 = dup %tmp.77;
+        %tmp.81 = aputv %tmp.80 1 %tmp.79;
+        %tmp.83 = const :constellations;
+        aputv %tmp.72 %tmp.83 %tmp.81;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_29_56_stop:
+        goto @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_29_15_if_end;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_29_15_if_end:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_18_8_if_end:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 33 8 ]
+        %tmp.84 = getv self :options;
+        %tmp.85 = getm $.Toybox.Position;
+        %tmp.86 = getv %tmp.85 :LOCATION_CONTINUOUS;
+        %tmp.88 = const :acquisitionType;
+        aputv %tmp.84 %tmp.88 %tmp.86;
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 35 8 ]
+        %tmp.89 = getm $.Toybox.Position;
+        %tmp.90 = getv function %tmp.89 :enableLocationEvents;
+        %tmp.92 = getv ? :options;
+        %tmp.93 = self;
+        %tmp.94 = getv function %tmp.93 :method;
+        %tmp.96 = const :onPosition;
+        %tmp.97 = invoke %tmp.93 %tmp.94(%tmp.96);
+        invoke %tmp.89 %tmp.90(%tmp.92, %tmp.97);
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 36 8 ]
+        %tmp.98 = getm $.Toybox.System;
+        %tmp.99 = getv function %tmp.98 :println;
+        %tmp.100 = "enableLocationEvents is called";
+        invoke %tmp.98 %tmp.99(%tmp.100);
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_16_32_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 39; ]
+    function onPosition(newInfo) {
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_39_33_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 40 8 ]
+        %tmp.2 = lgetv %newInfo;
+        putv self :info %tmp.2;
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 41 8 ]
+        %tmp.3 = getm $.Toybox.System;
+        %tmp.4 = getv function %tmp.3 :println;
+        %tmp.5 = "onPosition is called";
+        invoke %tmp.3 %tmp.4(%tmp.5);
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_39_33_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 44; ]
+    function getAccuracy() {
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_44_27_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 45 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "getAccuracy is called";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 46 8 ]
+        [ "C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_44_27_start" "C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_44_27_stop" ]
+        %accuracy.1 = local;
+        %tmp.5 = getv ? :info;
+        %tmp.6 = getv %tmp.5 :accuracy;
+        lputv %accuracy.1 %tmp.6;
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc" 47 8 ]
+        %tmp.8 = lgetv %accuracy.1;
+        ret %tmp.8;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_GPS_mc_44_27_stop:
+    }
+}
+[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\GPS.mc"; @line = 1; ]
+<init> {
+}

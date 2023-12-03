@@ -1,0 +1,117 @@
+[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 1; ]
+using Toybox.Communications as :Comm;
+[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 2; ]
+using Toybox.System as :Sys;
+[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 4; ]
+class wifiScan{
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 5; @position = 8; ]
+    var wifiStatus = false;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 6; @position = 8; ]
+    var errorCode;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 7; @position = 8; ]
+    var callbackMethod;
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 9; ]
+    function initialize() as Void {
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_9_26_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc" 10 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "initialize() called: wifiStatus=";
+        %tmp.6 = getv ? :wifiStatus;
+        %tmp.7 = add %tmp.4 %tmp.6;
+        invoke %tmp.2 %tmp.3(%tmp.7);
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_9_26_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 13; ]
+    function getStatus() {
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_13_24_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc" 14 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "getStatus() called: Returning wifiStatus=";
+        %tmp.6 = getv ? :wifiStatus;
+        %tmp.7 = add %tmp.4 %tmp.6;
+        invoke %tmp.2 %tmp.3(%tmp.7);
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc" 15 8 ]
+        %tmp.9 = getv ? :wifiStatus;
+        ret %tmp.9;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_13_24_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 19; ]
+    function getError() {
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_19_23_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc" 20 8 ]
+        %tmp.2 = getv ? :errorCode;
+        ret %tmp.2;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_19_23_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 25; ]
+    function checkWifiConnection(methodObj) {
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_25_44_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc" 26 8 ]
+        %tmp.2 = lgetv %methodObj;
+        putv self :callbackMethod %tmp.2;
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc" 27 8 ]
+        %tmp.3 = getm $.Toybox.Communications;
+        %tmp.4 = getv function %tmp.3 :checkWifiConnection;
+        %tmp.5 = self;
+        %tmp.6 = getv function %tmp.5 :method;
+        %tmp.8 = const :onWifiConnectionStatus;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.3 %tmp.4(%tmp.9);
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc" 28 8 ]
+        %tmp.11 = getv ? :System;
+        %tmp.12 = getv function %tmp.11 :println;
+        %tmp.13 = "checkWifiConnection() called";
+        invoke %tmp.11 %tmp.12(%tmp.13);
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_25_44_stop:
+    }
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 32; ]
+    function onWifiConnectionStatus(result) {
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_32_44_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc" 33 8 ]
+        %tmp.2 = lgetv %result;
+        %tmp.4 = const :wifiAvailable;
+        %tmp.5 = agetv %tmp.2 %tmp.4;
+        putv self :wifiStatus %tmp.5;
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc" 34 8 ]
+        %tmp.7 = lgetv %result;
+        %tmp.9 = const :errorCode;
+        %tmp.10 = agetv %tmp.7 %tmp.9;
+        putv self :errorCode %tmp.10;
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc" 35 8 ]
+        %tmp.12 = getv ? :System;
+        %tmp.13 = getv function %tmp.12 :println;
+        %tmp.14 = "onWifiConnectionStatus() called: wifiAvailable=";
+        %tmp.16 = getv ? :wifiStatus;
+        %tmp.17 = add %tmp.14 %tmp.16;
+        invoke %tmp.12 %tmp.13(%tmp.17);
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc" 38 8 ]
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_38_8_if_stmt:
+        %tmp.19 = getv ? :callbackMethod;
+        %tmp.20 = null;
+        %tmp.21 = ne %tmp.19 %tmp.20;
+        bf %tmp.21 @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_38_8_if_end;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_38_8_if_true:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_38_36_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc" 39 12 ]
+        %tmp.23 = getv ? :callbackMethod;
+        %tmp.24 = as %tmp.23 { (!Null) };
+        %tmp.25 = getv function %tmp.24 :invoke;
+        invoke %tmp.24 %tmp.25();
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_38_36_stop:
+        goto @C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_38_8_if_end;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_38_8_if_end:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_wifichecker_mc_32_44_stop:
+    }
+}
+[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\wifichecker.mc"; @line = 1; ]
+<init> {
+}

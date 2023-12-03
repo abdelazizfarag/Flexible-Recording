@@ -6,17 +6,18 @@ using Toybox.Activity;
 using Toybox.Position as Position;
 
 class watchappApp extends Application.AppBase {
-
+    //var wifi = new wifiScan();
+    var gps = new GPSQuality();
     function initialize() {
         AppBase.initialize();
-        //Position.enableLocationEvents(Position.LOCATION_CONTINUOUS, method(:onPositionUpdate));
-        //Position.enableLocationEvents( Position.LOCATION_CONTINUOUS, method(:onPosition) );
-        //dataTimer.start(method(:onCheckQuality), 1000, true); // A one-second timer
     }
-
+ 
     // onStart() is called on application start up
     function onStart(state as Dictionary?) as Void {
-        //Position.enableLocationEvents(Position.LOCATION_CONTINUOUS, method(:onPosition));
+        //var callback = wifi.method(:getStatus);
+        //wifi.checkWifiConnection(callback);
+        gps.startPositioning();
+        gps.getAccuracy();
     }
 
     // onStop() is called when your application is exiting

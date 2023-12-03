@@ -61,7 +61,7 @@ class watchappView extends WatchUi.View {
             options[:configuration] = Position.CONFIGURATION_GPS;
             options[:acquisitionType] = Position.LOCATION_CONTINUOUS;
         } catch (ex) {
-            System.println(false);
+            //System.println(false);
         }
         Position.enableLocationEvents(options, method(:onPosition));
     }
@@ -82,7 +82,7 @@ class watchappView extends WatchUi.View {
         if (gpsStatus == false){
             startPositioning();
             gpsStatus = true; 
-            System.println(gpsStatus);
+            //System.println(gpsStatus);
         }
     }
 
@@ -90,8 +90,8 @@ class watchappView extends WatchUi.View {
         posInfo = Position.getInfo();
         signalStrength = posInfo.accuracy;
 
-        if (posInfo.accuracy == Position.QUALITY_GOOD || posInfo.accuracy == Position.QUALITY_USABLE){
-            System.println("User left the building");
+        if (signalStrength == Position.QUALITY_GOOD || signalStrength == Position.QUALITY_USABLE){
+            //System.println("User left the building");
             //Get location and parse it
             location = posInfo.position.toDegrees();
             locTop = location[0];
@@ -112,12 +112,12 @@ class watchappView extends WatchUi.View {
     //Trigger method that turns on GPS when WiFi is out of range
     function trigger(wifiStatus) {
         if (wifiStatus == false){
-            System.println("Wifi is out of range");
+            //System.println("Wifi is out of range");
             initializeGPS();
             checkGPSQuality();
 
         }else if (wifiStatus == true){
-            System.println("Wifi available");
+            //System.println("Wifi available");
             gpsStatus = false;
         }
 
@@ -136,8 +136,6 @@ class watchappView extends WatchUi.View {
         dc.clear();
 
         var pos = 0;
-        ant();
-        
         
         dc.setColor( Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT );
         pos = pos + Graphics.getFontHeight(Graphics.FONT_SMALL);
@@ -159,28 +157,4 @@ class watchappView extends WatchUi.View {
     function onHide() as Void {
         Position.enableLocationEvents(Position.LOCATION_DISABLE, method(:onPosition));
     }
-
-    function ant() {
-        var channelType = Ant.CHANNEL_TYPE_RX_NOT_TX;
-        var network = Ant.NETWORK_PUBLIC;             
-        channelAssign = new Ant.ChannelAssignment(channelType, network);
-        channelAssign.initialize(method(:onMessage), channelAssign);
-        System.println("success");
-    }
-
-    function onMessage(msg) {
-        var payload = msg.getPayload(); //get the data payload
-        var data = new [msg.length];    // create an array the length of the message
-
-        // Iterate and add data to the Message with each pass
-        for (var i = 0; i < msg.length; i++) {
-            data[i] = i;            // Adds {0,1,2,3,4,5,6,7}
-        }
-        var message = new Ant.Message();
-        message.setPayload(data);       // Form the Message
-
-        // Set the broadcast buffer
-        GenericChannel.sendBroadcast(message);
-        System.println(message);
-    }
-}`
+}
