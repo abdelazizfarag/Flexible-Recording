@@ -2,28 +2,34 @@ using Toybox.Communications as Comm;
 using Toybox.System as Sys;
 
 class wifiScan {
-    var wifiStatus = false;
+    var wifiStatus = true;
     var errorCode;
-    var callbackMethod;
     
     function initialize() {
         System.println("initialize() called: wifiStatus=" + wifiStatus);
     }
 
+    //1st iteration: returns true
+    //updates: returns wifiAvaialable
+    /*function isWifi(){
+        if (wifiStatus){
+            return true;
+        }
+    }*/
+
+    //1st iteration: returns true
+    //updates: returns wifiAvailable
     function getStatus(){
-        System.println("getStatus() called: Returning wifiStatus=" + wifiStatus);
         return wifiStatus;
-        //System.println("Wifi connection unavailable");
     }
 
+    //Use to get the Errorcode when there's no Wifi available
     function getError(){
         return errorCode;
         //System.println("Error: " + errorCode);
     }
 
-    // Updated to use Garmin's API for Wi-Fi connection checking
-    function checkWifiConnection(methodObj) {
-        callbackMethod = methodObj; // Store the Method object
+    function checkWifiConnection() {
         Comm.checkWifiConnection(method(:onWifiConnectionStatus));
         System.println("checkWifiConnection() called");
     }
@@ -33,12 +39,6 @@ class wifiScan {
         wifiStatus = result[:wifiAvailable];
         errorCode = result[:errorCode];
         System.println("onWifiConnectionStatus() called: wifiAvailable=" + wifiStatus);
-
-                // Invoke the callback, if it exists
-        if (callbackMethod != null) {
-            callbackMethod.invoke(); // Invoke the callback method
-        }
-
     }
 
 }
