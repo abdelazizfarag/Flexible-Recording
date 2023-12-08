@@ -5,55 +5,54 @@ import Toybox.Lang;
 [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 3; ]
 import Toybox.WatchUi;
 [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 4; ]
-using Toybox.Timer;
-[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 5; ]
-using Toybox.Activity;
+using Toybox.Communications as :Comm;
 [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 6; ]
-using Toybox.Position as :Position;
-[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 8; ]
 class watchappApp extends Application.AppBase{
-    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 8; ]
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 6; ]
     <init> {
-[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc" 10 8 ]
-        %tmp.4 = getv ? :GPSQuality;
-        %tmp.1 = newc %tmp.4 ();
-        putv self :gps %tmp.1;
     }
-    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 8; ]
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 6; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 10; @position = 8; ]
-    var gps;
-    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 11; ]
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 12; ]
     function initialize() as Void {
-C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_11_26_start:
-[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc" 12 8 ]
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_12_26_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc" 13 8 ]
         %tmp.2 = getv ? :AppBase;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_11_26_stop:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc" 14 8 ]
+        %tmp.5 = getv ? :myTimer;
+        %tmp.6 = getv function %tmp.5 :start;
+        %tmp.7 = self;
+        %tmp.8 = getv function %tmp.7 :method;
+        %tmp.10 = const :onTimerTick;
+        %tmp.11 = invoke %tmp.7 %tmp.8(%tmp.10);
+        %tmp.12 = 1000;
+        %tmp.13 = true;
+        invoke %tmp.5 %tmp.6(%tmp.11, %tmp.12, %tmp.13);
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_12_26_stop:
     }
-    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 16; ]
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 18; ]
     function onStart(state as Dictionary or Null) as Void {
-C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_16_51_start:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_18_51_start:
 [ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc" 19 8 ]
+        [ "C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_18_51_start" "C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_18_51_stop" ]
+        %enable.1 = local;
         %tmp.2 = getv ? :gps;
-        %tmp.3 = getv function %tmp.2 :startPositioning;
-        invoke %tmp.2 %tmp.3();
-[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc" 20 8 ]
-        %tmp.5 = getv ? :gps;
-        %tmp.6 = getv function %tmp.5 :getAccuracy;
-        invoke %tmp.5 %tmp.6();
-C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_16_51_stop:
+        %tmp.3 = getv function %tmp.2 :enableLocation;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %enable.1 %tmp.4;
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_18_51_stop:
     }
-    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 24; ]
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 36; ]
     function onStop(state as Dictionary or Null) as Void {
     }
-    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 28; ]
+    [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 40; ]
     function getInitialView() as Array<Views or InputDelegates> or Null {
-C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_28_65_start:
-[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc" 29 8 ]
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_40_65_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc" 41 8 ]
         %tmp.1 = newa Array<Views or InputDelegates> 2;
         %tmp.5 = getv ? :watchappView;
         %tmp.2 = newc %tmp.5 ();
@@ -64,19 +63,19 @@ C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappAp
         %tmp.12 = dup %tmp.7;
         %tmp.13 = aputv %tmp.12 1 %tmp.8;
         ret %tmp.13;
-C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_28_65_stop:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_40_65_stop:
     }
 }
-[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 34; ]
+[ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 46; ]
 function getApp() as watchappApp {
-C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_34_33_start:
-[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc" 35 4 ]
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_46_33_start:
+[ "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc" 47 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 watchappApp;
     ret %tmp.4;
-C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_34_33_stop:
+C_Users_Zezos_Desktop_Garm_Gitrepo_Flexible_Recording_watchapp_source_watchappApp_mc_46_33_stop:
 }
 [ @file = "C:\Users\Zezos\Desktop\Garm\Gitrepo\Flexible-Recording\watchapp\source\watchappApp.mc"; @line = 1; ]
 <init> {
